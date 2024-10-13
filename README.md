@@ -6,25 +6,24 @@ This project is a part of the Cloud Resume Challenge, which aims to demonstrate 
 
 1. Static Resume Website:
 
-- Deployed to an AWS S3 bucket.
-- Accessed via a custom domain using Route 53 and secured with SSL (AWS Certificate Manager).
-- Served through AWS CloudFront for content delivery.
+   - Deployed to an AWS S3 bucket.
+   - Accessed via a custom domain using Route 53 and secured with SSL (AWS Certificate Manager).
+   - Served through AWS CloudFront for content delivery.
 
 2. Visitor Counter:
 
-- A Lambda function (written in Python) that increments and retrieves the visitor count from DynamoDB.
-- API Gateway is used to invoke the Lambda function from the frontend.
-- CORS enabled to allow communication between the S3-hosted frontend and the API Gateway.
+   - A Lambda function (written in Python) that increments and retrieves the visitor count from DynamoDB.
+   - API Gateway is used to invoke the Lambda function from the frontend.
+   - CORS enabled to allow communication between the S3-hosted frontend and the API Gateway.
 
 3. CI/CD Pipline:
-
-- Built using GitHub Actions.
-- Automated workflow triggers on push to GitHub repository, running Terraform to manage and deploy AWS resources.
-- The pipeline runs the following steps:
-  - Checkout code from the repository.
-  - Install and initialize Terraform.
-  - Deploy infrastructure changes using terraform apply.
-  - Configure AWS credentials securely through GitHub Secrets.
+   - Built using GitHub Actions.
+   - Automated workflow triggers on push to GitHub repository, running Terraform to manage and deploy AWS resources.
+   - The pipeline runs the following steps:
+     1. Checkout code from the repository.
+     2. Install and initialize Terraform.
+     3. Deploy infrastructure changes using terraform apply.
+     4. Configure AWS credentials securely through GitHub Secrets.
 
 ## Infrastructure
 
