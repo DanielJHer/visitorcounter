@@ -1,4 +1,4 @@
-Cloud Resume Challenge
+**Cloud Resume Challenge**
 This project is a part of the Cloud Resume Challenge, which aims to demonstrate practical experience in cloud technologies like AWS, Terraform, and GitHub Actions. The project consists of a static website hosted on AWS S3, integrated with a visitor counter using AWS Lambda, API Gateway, DynamoDB, and a CI/CD pipeline built using GitHub Actions and Terraform.
 
 Project Overview
