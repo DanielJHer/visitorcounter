@@ -1,5 +1,4 @@
 provider "aws" {
-    version = ">= 5.0.0"
     region = "us-west-1"
 }
 
@@ -97,7 +96,12 @@ resource "aws_s3_bucket_policy" "my_bucket_policy" {
 }
 
 terraform {
-  required_version = ">= 0.12"
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = ">= 5.0.0"
+    }
+  }
 
   backend "s3" {
     bucket         = "cloudresumechallengetftf"
