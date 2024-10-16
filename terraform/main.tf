@@ -94,3 +94,15 @@ resource "aws_s3_bucket_policy" "my_bucket_policy" {
     }]
   })
 }
+
+terraform {
+  required_version = ">= 0.12"
+
+  backend "s3" {
+    bucket         = "cloudresumechallengetftf"
+    key            = "dev/terraform.tfstate"
+    region         = "us-west-1"
+    dynamodb_table = "terraform-lock-table"
+    encrypt        = true
+  }
+}
