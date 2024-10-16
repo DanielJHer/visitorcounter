@@ -2,6 +2,23 @@ provider "aws" {
     region = "us-west-1"
 }
 
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = ">= 5.0.0"
+    }
+  }
+
+  backend "s3" {
+    bucket         = "cloudresumechallengetftf"
+    key            = "dev/terraform.tfstate"
+    region         = "us-west-1"
+    dynamodb_table = "terraform-lock-table"
+    encrypt        = true
+  }
+}
+
 resource "aws_cloudfront_distribution" "my_distribution" {
   aliases = ["danielher.com"]
 
@@ -95,19 +112,3 @@ resource "aws_s3_bucket_policy" "my_bucket_policy" {
   })
 }
 
-terraform {
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "~> 5.0"
-    }
-  }
-
-  backend "s3" {
-    bucket         = "cloudresumechallengetftf"
-    key            = "dev/terraform.tfstate"
-    region         = "us-west-1"
-    dynamodb_table = "terraform-lock-table"
-    encrypt        = true
-  }
-}
