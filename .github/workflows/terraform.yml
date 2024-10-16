@@ -35,6 +35,11 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-west-1
 
+      # Testing to remove cache
+      - name: Remove Terraform cache
+        run: |
+          rm -rf ~/.terraform.d/plugins
+
       # Step 4: Initialize Terraform
       - name: Terraform Init
         run: terraform init
