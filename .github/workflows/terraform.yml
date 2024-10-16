@@ -35,17 +35,22 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-west-1
 
-      # Step 4: Initialize Terraform
+      # Step 4: Remove Terraform plugins
+      - name: Remove Terraform cache
+        run: |
+          rm -rf ~/.terraform.d/plugins
+
+      # Step 5: Initialize Terraform
       - name: Terraform Init
         run: terraform init
         working-directory: ./terraform
 
-      # Step 5: Run Terraform Plan
+      # Step 6: Run Terraform Plan
       - name: Terraform Plan
         run: terraform plan
         working-directory: ./terraform
 
-      # Step 6: Run Terraform Apply
+      # Step 7: Run Terraform Apply
       - name: Terraform Apply
         run: terraform apply -auto-approve
         working-directory: ./terraform
