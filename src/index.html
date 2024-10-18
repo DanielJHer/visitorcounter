@@ -1,190 +1,277 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Daniel Her - Resume</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="main.js" defer></script>
+    <title>Daniel Her</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
   </head>
-  <body>
-    <header>
-      <h1>Hi, I'm Daniel</h1>
-      <p>
-        and this page has been viewed:
-        <span id="visitor-count">Loading...</span> times!
-      </p>
-    </header>
-
-    <section>
-      <h2>Education</h2>
-      <div class="resume-item">
-        <div class="item-left">
-          <strong>Western Governor's University</strong><br />Bachelor of
-          Science in Computer Science
-        </div>
-        <div class="item-right">
-          <em>Salt Lake City, UT | August 2024</em>
-        </div>
-      </div>
-
-      <div class="resume-item">
-        <div class="item-left">
-          <strong>University of California, Berkeley</strong><br />Master’s
-          Degree in Social Welfare
-        </div>
-        <div class="item-right">
-          <em>Berkeley, CA | May 2022</em>
-        </div>
-      </div>
-
-      <div class="resume-item">
-        <div class="item-left">
-          <strong>University of California, Berkeley</strong><br />Bachelor of
-          Arts in Social Welfare
-        </div>
-        <div class="item-right">
-          <em>Berkeley, CA | May 2019</em>
-        </div>
+  <body class="is-preload">
+    <!-- Sidebar -->
+    <section id="sidebar">
+      <div class="inner">
+        <nav>
+          <ul>
+            <li><a href="#intro">About Me</a></li>
+            <li><a href="#one">Proejcts</a></li>
+            <li><a href="#two">Blog</a></li>
+            <li><a href="#three">Contact</a></li>
+          </ul>
+        </nav>
       </div>
     </section>
 
-    <section>
-      <h2>Experience</h2>
-      <div class="resume-item">
-        <div class="item-left">
-          <strong>Freelance Software Engineer - Self-Employed</strong
-          ><br />-Developed application for bakery to automate vendor purchasing
-          process, saving ~$2k in monthly costs. <br />-Collaborating directly
-          with client to gather business requirements and deliver highly
-          customized software solutions <br />-Translating complex technical
-          issues into clear, understandable concepts to help clients better
-          understand constraints
-        </div>
-        <div class="item-right">
-          <em>Millbrae, CA | July 2024 – Present</em>
-        </div>
-      </div>
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Intro -->
+      <section id="intro" class="wrapper style1 fullscreen fade-up">
+        <div class="inner">
+          <div class="about-me-container">
+            <div class="text-content">
+              <h1>Hi, I'm Daniel.</h1>
+              <p>
+                My transition from social work to technology was driven by a
+                constant inner dialogue I’ve always had—
+                <i>"Is there a better way to do this?"</i> This curiosity led me
+                into the world of software engineering and cloud architecture,
+                where I now thrive on solving complex problems and building
+                scalable solutions. Outside of technology, I compete in
+                Brazilian Jiu-Jitsu and teach kids the discipline and focus that
+                have shaped both my life and career.
+              </p>
+            </div>
 
-      <div class="resume-item">
-        <div class="item-left">
-          <strong
-            >Children’s Services Social Worker III - San Mateo County, Human
-            Services Agency</strong
-          ><br />-Streamlined data entry, reducing paperwork generation time by
-          25%. <br />-Played a key role in providing user feedback to improve
-          CWS/CMS, Okta, and Workday software applications <br />-Strategic
-          problem solving with various stakeholders to foster successful
-          outcomes including family reunifications
-        </div>
-        <div class="item-right">
-          <em>Belmont, CA | June 2022 – August 2024</em>
-        </div>
-      </div>
+            <div class="image-button-container">
+              <img
+                src="images/headshot.jpeg"
+                alt="Daniel's Headshot"
+                class="headshot"
+              />
 
-      <div class="resume-item">
-        <div class="item-left">
-          <strong>Case Manager II - Asian Pacific Islander AIDS Center</strong
-          ><br />-Developed a user guidebook for clients navigating resources,
-          reducing help requests by 50%. <br />-Leveraged advanced communication
-          and interpersonal skills to troubleshoot technical issues for disabled
-          clients <br />-Managed database tools on organization application to
-          track client progress and generate reports for outcomes
+              <ul class="actions">
+                <li>
+                  <a
+                    href="assets/resume.pdf"
+                    class="button scrolly cta-button"
+                    download="Daniel_Her_Resume"
+                    >Download Resume</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="item-right">
-          <em>Los Angeles, CA | August 2019 – July 2020</em>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section>
-      <h2>Projects</h2>
-      <div class="resume-item">
-        <div class="item-left">
-          <strong>BreadBasket</strong><br />-Developed app using React.js for
-          frontend, Node.js for backend, deployed on AWS. <br />-Implementing
-          Firebase authentication for user email login and MongoDB for database
-          management <br />-Integrating email notifications with Nodemailer for
-          order placements and generating daily instructions for workers
-        </div>
-        <div class="item-right">
-          <em>July 2024 – Present</em><br /><a
-            href="https://github.com/DanielJHer/BreadBasket"
-            target="_blank"
-            >github.com/DanielJHer/BreadBasket</a
+      <!-- One -->
+      <section id="one" class="wrapper style2 spotlights">
+        <section>
+          <a
+            href="https://github.com/DanielJHer/cloudresumechallenge"
+            class="image"
           >
+            <img src="images/pic01.jpg" alt="" data-position="center center" />
+          </a>
+          <div class="content">
+            <div class="inner">
+              <h2>Visitor Counter</h2>
+              <p>
+                This project showcases cloud skills using AWS, Terraform, and
+                GitHub Actions. It features a static website on AWS S3 with a
+                visitor counter powered by Lambda, API Gateway, DynamoDB, and a
+                CI/CD pipeline with GitHub Actions and Terraform.
+              </p>
+              <ul class="actions">
+                <li>
+                  <a
+                    href="https://github.com/DanielJHer/cloudresumechallenge"
+                    class="button"
+                    >GitHub Repo</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section>
+          <a href="https://github.com/DanielJHer/BreadBasket" class="image">
+            <img src="images/pic02.jpg" alt="" data-position="top center" />
+          </a>
+          <div class="content">
+            <div class="inner">
+              <h2>BreadBasket</h2>
+              <p>
+                Breadbasket is a full-stack app using React, Node.js/Express,
+                MongoDB, and Firebase for user authentication. Vendors can log
+                in and place orders, while the backend automates order
+                processing, generates reports, and emails them to recipients.
+              </p>
+              <ul class="actions">
+                <li>
+                  <a
+                    href="https://github.com/DanielJHer/BreadBasket"
+                    class="button"
+                    >GitHub Repo</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section>
+          <a href="https://github.com/DanielJHer/Match-Predictor" class="image">
+            <img src="images/pic03.png" alt="" data-position="25% 25%" />
+          </a>
+          <div class="content">
+            <div class="inner">
+              <h2>Match Predictor</h2>
+              <p>
+                This Python-based app uses a linear regression model to predict
+                potential matches in dating apps based on factors like gender,
+                age, income, and attractiveness. Users input their details, and
+                the model provides personalized predictions of match success.
+              </p>
+              <ul class="actions">
+                <li>
+                  <a
+                    href="https://github.com/DanielJHer/Match-Predictor"
+                    class="button"
+                    >GitHub Repo</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- Two -->
+      <section id="two" class="wrapper style3 fade-up">
+        <div class="inner blog-container">
+          <div class="blog-text-content">
+            <h2>Deploying to the Cloud</h2>
+            <p>
+              This blog captures my journey through cloud computing and software
+              engineering, from mastering core concepts to building scalable,
+              reliable solutions. I share insights, challenges, and practical
+              tips as I navigate the complexities of modern development, aiming
+              to inspire others and reflect on the lessons learned along the
+              way.
+            </p>
+            <ul class="actions">
+              <li>
+                <a href="https://danielher.hashnode.dev/" class="button"
+                  >Read the Blog</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <a href="https://danielher.hashnode.dev/" class="blog-pic">
+            <img class="blog-pic" src="images/blog.png" alt="blog" />
+          </a>
         </div>
+      </section>
+
+      <!-- Three -->
+      <section id="three" class="wrapper style1 fade-up">
+        <div class="inner">
+          <h2>Contact</h2>
+          <p>Let's get in touch!</p>
+          <div class="split style1">
+            <section>
+              <form method="post" action="https://formspree.io/f/manyygob">
+                <div class="fields">
+                  <div class="field half">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" />
+                  </div>
+                  <div class="field half">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" />
+                  </div>
+                  <div class="field">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" rows="5"></textarea>
+                  </div>
+                </div>
+                <ul class="actions">
+                  <li>
+                    <button type="submit" class="button submit">
+                      Send Message
+                    </button>
+                  </li>
+                </ul>
+              </form>
+            </section>
+            <section>
+              <ul class="contact">
+                <li>
+                  <h3>Address</h3>
+                  <span
+                    >Los Angeles<br />
+                    California, USA</span
+                  >
+                </li>
+                <li>
+                  <h3>Email</h3>
+                  <a href="#">danieljhher@gmail.com</a>
+                </li>
+                <li>
+                  <h3>Phone</h3>
+                  <span>(650) 307-3987</span>
+                </li>
+                <li>
+                  <h3>Social</h3>
+                  <ul class="icons">
+                    <li>
+                      <a
+                        href="https://github.com/DanielJHer"
+                        class="icon brands fa-github"
+                        ><span class="label">GitHub</span></a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.linkedin.com/in/danieljher/"
+                        class="icon brands fa-linkedin-in"
+                        ><span class="label">LinkedIn</span></a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="wrapper style1-alt">
+      <div class="inner">
+        <ul class="menu">
+          <li>&copy; 2024 Daniel Her. All rights reserved.</li>
+          <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+          <li>Visitor Count:<span id="visitor-count"> Loading...</span>!</li>
+        </ul>
       </div>
-
-      <div class="resume-item">
-        <div class="item-left">
-          <strong>Match Predictor Application</strong><br />-Implemented machine
-          learning to forecast online dating matches. <br />-Developed an
-          interactive user interface with Tkinter complemented with data
-          visualization tools using Matplotlib <br />-Successfully applied
-          Polynomial Features and Ridge Regression to achieve 85% accuracy rate
-          in predictions
-        </div>
-        <div class="item-right">
-          <em>April – June 2024</em><br /><a
-            href="https://github.com/DanielJHer/Match-Predictor"
-            target="_blank"
-            >github.com/DanielJHer/Match-Predictor</a
-          >
-        </div>
-      </div>
-
-      <div class="resume-item">
-        <div class="item-left">
-          <strong>Mealable Web Application</strong><br />-Developed an
-          application to search for recipes based on ingredients with a
-          favorites feature. <br />-Implemented with Model-View-Controller and
-          publisher-subscriber design pattern for developer maintainability
-          <br />-Utilized Async/Await functions for fetching API calls, OOP
-          logic and data manipulation to render DOM
-        </div>
-        <div class="item-right">
-          <em>January – December 2022</em><br /><a
-            href="https://github.com/DanielJHer/Mealable"
-            target="_blank"
-            >github.com/DanielJHer/Mealable</a
-          >
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <h2>Technical Skills</h2>
-      <ul>
-        <li>
-          <strong>Languages:</strong> Javascript, Python, Java, C/C++, MySQL,
-          HTML, CSS/SASS
-        </li>
-        <li>
-          <strong>Frameworks/Libraries:</strong> React, Node.js, MongoDB,
-          Firebase, WordPress, SpringBoot, Ruby on Rails
-        </li>
-        <li>
-          <strong>Developer Tools:</strong> Linux, Git, Github, Gitlab, Docker
-          Hub, AWS, Visual Studio, LLMs
-        </li>
-        <li>
-          <strong>Certifications:</strong> AWS Certified Cloud Practitioner, LPI
-          Linux Essentials, ITIL 4 Foundation
-        </li>
-      </ul>
-    </section>
-
-    <footer>
-      <p>
-        © 2024 Daniel Her |
-        <a href="mailto:danieljhher@gmail.com">danieljhher@gmail.com</a> |
-        <a href="https://www.linkedin.com/in/danieljher" target="_blank"
-          >LinkedIn</a
-        >
-        |
-        <a href="https://github.com/DanielJHer" target="_blank">GitHub</a>
-      </p>
     </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
