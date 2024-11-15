@@ -19,6 +19,7 @@ This project is a rendition of the Cloud Resume Challenge, which aims to demonst
    - CORS enabled to allow communication between the S3-hosted frontend and the API Gateway.
 
 3. CI/CD Pipline:
+
    - Built using GitHub Actions.
    - Automated workflow triggers on push to GitHub repository, running Terraform to manage and deploy AWS resources.
    - The pipeline runs the following steps:
